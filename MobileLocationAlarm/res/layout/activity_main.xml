@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/theme5" >
+
+    <Button
+        android:id="@+id/bCheckLoc"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bEnterLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Check Location" />
+
+    <Button
+        android:id="@+id/btnShowLocation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="Show Location" />
+
+    <Button
+        android:id="@+id/bAbout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bCheckLoc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="About Us" />
+
+    <Button
+        android:id="@+id/bEnterLocation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnShowLocation"
+        android:layout_below="@+id/btnShowLocation"
+        android:layout_marginTop="36dp"
+        android:text="Enter Location" />
+
+</RelativeLayout>

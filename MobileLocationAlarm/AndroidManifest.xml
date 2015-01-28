@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilelocationalarm2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Start"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.mobilelocationalarm2.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mobilelocationalarm2.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Enterlocation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mobilelocationalarm2.ENTERLOCATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CheckLocation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mobilelocationalarm2.CHECKLOCATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlarmRing"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mobilelocationalarm2.ALARMRING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Pref"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mobilelocationalarm2.PREF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mobilelocationalarm2.ABOUTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
